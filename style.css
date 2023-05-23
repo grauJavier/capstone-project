@@ -1,0 +1,736 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: opacity 0.13s, border 0.13s, color 0.13s, margin 0.13s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+  display: inherit;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* DISPLAYS */
+.grid {
+  display: grid;
+  grid-template-columns: 11.81vw 1fr 11.81vw;
+}
+
+.container {
+  grid-column: 2 / 3;
+  padding: 0.8rem 0;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.f-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.f-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+/* SIZES */
+
+.w-100 {
+  width: 100%;
+}
+
+.w-84 {
+  width: 84%;
+}
+
+.w-75 {
+  width: 84%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.max-w-66 {
+  max-width: 66%;
+}
+
+.max-w-75 {
+  max-width: 75%;
+}
+
+.max-w-84 {
+  max-width: 84%;
+}
+
+.min-w-630 {
+  min-width: 630px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.fit-content {
+  width: fit-content;
+  height: fit-content;
+}
+
+/* GAPS */
+
+.g-3 {
+  gap: 3px;
+}
+
+.g-10 {
+  gap: 10px;
+}
+
+.g-17 {
+  gap: 17px;
+}
+
+.g-20 {
+  gap: 20px;
+}
+
+.g-30 {
+  gap: 30px;
+}
+
+.g-50 {
+  gap: 50px;
+}
+
+.g-70 {
+  gap: 70px;
+}
+
+.g-80 {
+  gap: 70px;
+}
+
+/* MARGIN & PADDINGS */
+
+.m-section {
+  margin: 8vh 0;
+}
+
+.m-70 {
+  margin: 7rem 0;
+}
+
+.m-40 {
+  margin: 4rem 0;
+}
+
+.m-25 {
+  margin: 2.5rem 0;
+}
+
+.p-10 {
+  padding: 1rem;
+}
+
+.p-30 {
+  padding: 3rem;
+}
+
+/* ALIGNMENTS */
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: end;
+}
+
+.ac-center {
+  align-content: center;
+}
+
+.ji-center {
+  justify-items: center;
+}
+
+.as-center {
+  align-self: center;
+}
+
+.js-center {
+  justify-self: center;
+}
+
+.js-left {
+  justify-self: end;
+}
+
+/* COLORS */
+.bg-black {
+  background-color: #000;
+}
+
+.bg-dark {
+  background-color: #272a31;
+}
+
+.bg-grey {
+  background-color: #414246;
+}
+
+.bg-light {
+  background-color: #d3d3d3;
+}
+
+.bg-lighter {
+  background-color: #f6f6f7;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-orange {
+  background-color: #ec5242;
+}
+
+.black {
+  color: #000;
+}
+
+.dark {
+  color: #272a31;
+}
+
+.grey {
+  color: #545454;
+}
+
+.light {
+  color: #d3d3d3;
+}
+
+.lighter {
+  color: #f6f6f7;
+}
+
+.white {
+  color: #fff;
+}
+
+.orange {
+  color: #ec5242;
+}
+
+.transparent {
+  background-color: #ffffff1a;
+}
+
+/* BACKGROUND PATTERNS */
+
+.bg-pattern-1 {
+  background-image: url("./visuals/pattern_bg.png");
+  background-repeat: repeat;
+}
+
+/* FONTS PROPERTIES */
+.ff-1 {
+  font-family: "Lato", sans-serif;
+}
+
+.ff-2 {
+  font-family: "Cocogoose", sans-serif;
+}
+
+.ff-3 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.fs-100 {
+  font-size: 10rem;
+  line-height: 1em;
+}
+
+.fs-80 {
+  font-size: 8rem;
+  line-height: 0.85em;
+}
+
+.fs-60 {
+  font-size: 6rem;
+}
+
+.fs-40 {
+  font-size: 4rem;
+}
+
+.fs-30 {
+  font-size: 3rem;
+}
+
+.fs-25 {
+  font-size: 2.5rem;
+}
+
+.fs-20 {
+  font-size: 2rem;
+}
+
+.fs-18 {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.fs-16 {
+  font-size: 1.6rem;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-bolder {
+  font-weight: 900;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fw-lighter {
+  font-weight: lighter;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+/* BUTTONS */
+
+.btn-orange {
+  font-family: inherit;
+  color: #fff;
+  background-color: #ec5242;
+  border: 4px solid #ec5242;
+  padding: 2px 6px;
+  line-height: 2em;
+}
+
+.btn-orange:hover {
+  color: #ec5242;
+  background-color: #fff0;
+}
+
+.btn-grey {
+  font-family: inherit;
+  color: #fff;
+  background-color: #545454;
+  border: 4px solid #545454;
+  padding: 2px 6px;
+  line-height: 2em;
+}
+
+/* LINES */
+
+.line-orange {
+  border: 0;
+  border-bottom: 1px solid #ec5242;
+  margin: 18px auto;
+  width: 53px;
+}
+
+.line-light {
+  border: 0;
+  border-bottom: 1px solid #d3d3d3;
+  width: 45px;
+}
+
+/* CONTAINERS */
+
+.box {
+  padding: 25px;
+}
+
+.border-white {
+  border: 4px solid #fff;
+}
+
+.border-light {
+  border: 1px solid #d3d3d3;
+}
+
+.border-grey {
+  border: 1px solid #d3d3d3;
+}
+
+.border-white-hover {
+  border: 3px solid #fff0;
+}
+
+.border-white-hover:hover {
+  border: 3px solid #fff;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* EFFECTS */
+nav {
+  width: 100%;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.28) 0 1px 13px;
+  position: relative;
+}
+
+.underline-hover:hover {
+  text-decoration: underline;
+}
+
+.orange-hover:hover {
+  color: #ec5242;
+}
+
+#back-to-top-button {
+  position: fixed;
+  font-size: 2rem;
+  rotate: 45deg;
+  width: 35px;
+  height: 35px;
+  bottom: 35px;
+  right: 35px;
+  box-shadow: #0006 4px 4px 13px;
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+#back-to-top-button i {
+  display: inline-block;
+  rotate: -45deg;
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+}
+
+.show {
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+/* LOGO */
+#navbar__logo {
+  width: 17rem;
+}
+
+/* FRONT-PAGE */
+
+.bi-facebook:hover {
+  color: #1b74e4;
+}
+
+.bi-twitter:hover {
+  color: #1d9bf0;
+}
+
+#front-page {
+  background-image: url(./visuals/front-page-background.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+#front-page__content {
+  margin: 16.6vh 0;
+}
+
+#front-page__title {
+  mix-blend-mode: color-burn;
+  filter: contrast(120%) saturate(200%);
+}
+
+.support__logo {
+  width: 20rem;
+  filter: saturate(0%) opacity(50%);
+}
+
+.support__logo:hover {
+  filter: saturate(100%) opacity(100%);
+}
+
+/* BAND MEMBERS PAGE */
+
+.band-member-cards__portrait {
+  margin-top: 28px;
+  margin-left: 28px;
+  max-width: 170px;
+  max-height: 170px;
+  box-shadow: -70.84px -70.84px 0 -42.5px;
+}
+
+/* ABOUT PAGE */
+#about {
+  background-image: url(./visuals/about-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#embark__logo {
+  max-width: 33rem;
+  width: 100%;
+}
+
+.older-wt {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  filter: saturate(120%);
+  box-shadow: #ec5342b2 0 0 0 500px inset;
+  height: 20rem;
+}
+
+.older-wt:hover {
+  box-shadow: #0000006f 0 0 0 500px inset;
+}
+
+#wt-japan {
+  background-image: url("./visuals/wt-japan.jpg");
+}
+
+#wt-brazil {
+  background-image: url("./visuals/wt-brazil.jpg");
+}
+
+/* Mobile Menu */
+
+#hamburger {
+  display: none;
+}
+
+.bi-x {
+  position: relative;
+  top: 0;
+}
+
+#navbar__hamburguer__menulist {
+  display: none;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+  .grid {
+    grid-template-columns: 7vw 1fr 7vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #navbar__container {
+    gap: 20px;
+  }
+
+  #navbar__container,
+  #dates__container,
+  .band__paired-members,
+  #past-wt__container {
+    flex-direction: column;
+  }
+
+  #front-page__title h2 {
+    font-size: 5rem;
+  }
+
+  #front-page__title__world-tour,
+  #front-page__body-text {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .max-w-84 {
+    max-width: 100%;
+  }
+
+  #about h1 {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .max-w-75 {
+    max-width: 100%;
+  }
+
+  #navbar__menulist {
+    display: none;
+  }
+
+  #navbar__container {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  #navbar__button-logo {
+    width: 100%;
+  }
+
+  #hamburger {
+    display: inline;
+  }
+
+  #navbar__logo {
+    width: 10rem;
+  }
+
+  #hamburger i {
+    font-size: 3rem;
+  }
+
+  #about h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .dates__paired {
+    flex-direction: column;
+  }
+
+  #front-page {
+    background-position: -400px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  #front-page {
+    background-position: -600px;
+  }
+
+  #front-page h2 {
+    font-size: 2.8rem;
+  }
+
+  #front-page .fs-100 {
+    font-size: 7rem;
+    line-height: 0.8em;
+  }
+
+  #front-page__title__world-tour {
+    font-size: 6rem;
+  }
+
+  #front-page .fs-20,
+  #front-page .fs-25 {
+    font-size: 1.6rem;
+  }
+
+  #front-page .fs-40 {
+    font-size: 2.5rem;
+  }
+
+  #support h2 {
+    font-size: 2rem;
+  }
+
+  #about h1 {
+    font-size: 3rem;
+  }
+
+  footer .g-50 {
+    gap: 20px;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  #footer__address {
+    flex-direction: column;
+  }
+
+  #footer__address p {
+    text-align: center;
+  }
+
+  #footer__faq {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #band-member-cards__container {
+    flex-direction: column;
+  }
+}
