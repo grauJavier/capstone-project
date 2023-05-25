@@ -2,7 +2,7 @@
 
 <!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+# Capstone Project - Joshua Redman World Tour 2023
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
@@ -10,24 +10,22 @@
     - [Key Features](#key-features)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
+  - [Installation](#installation)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
+- [⭐️ Show Your Support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 "My First Portfolio" Project <a name="about-project"></a>
+# 📖 Joshua Redman World Tour 2023 <a name="about-project"></a>
 
-**My First Portfolio** project is an engaging and practical exercise that allows individuals to master the tools and best practices of HTML and CSS design. This project is designed to imitate a simple yet attractive portfolio that will effectively showcase an individual's skills and experiences.
+The Joshua Redman World Tour 2023 project showcases the upcoming world tour of renowned jazz saxophonist Joshua Redman. This website provides information about the tour, including tour dates, venues, and ticket information.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,7 +46,7 @@
 </details>
 
 <details>
-<summary>Programing Languages</summary>
+<summary>Programming Languages</summary>
   <ul>
     <li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
     <li><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></li>
@@ -56,23 +54,19 @@
   </ul>
 </details>
 
-<!-- Features -->
+<!-- FEATURES -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Clean and Modern Design:** The page features a visually appealing and contemporary design, ensuring a pleasant user experience.
-
-- **Responsive Layout:** The website is responsive, meaning it adapts well to different screen sizes and devices, providing an optimal viewing experience for users on desktop, tablet, and mobile devices.
-
-- **Easy Navigation:** The site offers intuitive and easy-to-use navigation, making it effortless for users to explore different sections and find the desired information.
-
-- **Contact Form:** The page includes a contact form that enables visitors to get in touch with the owner easily, facilitating communication and potential collaboration opportunities.
+- **Clean and Modern Design:** The website features a visually appealing and contemporary design, providing an engaging user experience.
+- **Responsive Layout:** The website is responsive and adapts seamlessly to different screen sizes and devices, ensuring optimal viewing across desktop, tablet, and mobile.
+- **Easy Navigation:** The site offers intuitive and user-friendly navigation, making it effortless for visitors to explore different sections and find tour-related information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Live Demo -->
 # 🚀 Live Demo <a name="live-demo"></a>
-To access the Live Demo [Click here!](https://graujavier.github.io/my-first-portfolio/)
+Deployment coming soon!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,7 +88,7 @@ To run this project you need:
 
 Clone this repository to your desired folder with git:
 
-`git clone https://github.com/grauJavier/my-first-portfolio.git`
+`git clone https://github.com/grauJavier/capstone-project.git`
 
 ### Install
 
@@ -110,7 +104,7 @@ No run test is available.
 
 ### Deployment
 
-Deployment link: https://graujavier.github.io/my-first-portfolio/
+Deployment link: *Coming soon!*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,15 +116,6 @@ Deployment link: https://graujavier.github.io/my-first-portfolio/
 - GitHub: [@grauJavier](https://github.com/grauJavier)
 - Twitter: [@jgrauchile](https://twitter.com/jgrauchile)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/javiergrau)
-
-👤 **Randall Bonilla**
-- GitHub: [@greetycr](https://github.com/GreetyCr)  
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/randall-bonilla-cordero-8653a6220/)
-
-👤 **Henok Mekonnen**
-- GitHub: [@henask12](https://github.com/henask12)
-- Twitter: [@henok_mekonnen3](https://twitter.com/henok_mekonnen3)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/henok-mekonnen-491685188)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,7 +150,8 @@ If you like this project gift us with a nice comment!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my proficient code reviewer.
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+Used under the [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

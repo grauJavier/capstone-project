@@ -11,190 +11,197 @@
 </head>
 
 <body>
-  <header>
-    <div class="bg-dark grid">
-      <ul class="white container f-row js-left g-20 ai-center fs-20">
-        <li>
-          <a href="#"><i class="bi bi-facebook lighter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="bi bi-twitter lighter"></i></a>
-        </li>
-        <li class="fs-18 underline-hover"><a href="#">Español</a></li>
-      </ul>
-    </div>
-    <nav class="bg-white grid">
-      <div class="container f-row ai-center jc-between" id="navbar__container">
-        <div class="f-row jc-between" id="navbar__button-logo">
-        <div id="hamburger">
-          <i class="bi bi-list fs-40"></i>
-        </div>
-        <a href="#">
-          <img id="navbar__logo" src="./visuals/logo-jrwt.png" />
-        </a>
+  <header id="header">
+    <div class="grid bg-dark white" id="header__top-black-bar">
+      <div class="container" id="header__top-black-bar-container">
+        <ul class="f-row" id="header__top-black-bar-list">
+          <li><a href="#"><i class="bi bi-facebook lighter"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter lighter"></i></a></li>
+          <li><a class="fs-underline-hover" href="#">Español</a></li>
+        </ul>
       </div>
-          <ul class="f-col g-20 fs-20 fw-bold w-84 m-25" id="navbar__hamburguer__menulist">
-            <li class="btn-grey"><a class="w-100 ta-center" href="#">Home</a></li>
-            <li class="btn-grey"><a class="w-100 ta-center" href="#dates">Dates</a></li>
-            <li class="btn-grey"><a class="w-100 ta-center" href="#band">Band</a></li>
-            <li class="btn-grey"><a class="w-100 ta-center" href="#">Music</a></li>
-            <li class="btn-orange"><a class="w-100 ta-center" href="#">Buy tickets</a></li>
-            <li class="btn-grey"><a class="w-100 ta-center" href="./about.html">About Us</a></li>
-          </ul>
-        <ul class="f-row g-70 jc-around ai-center fs-18 grey" id="navbar__menulist">
+    </div>
+
+    <nav class="grid bg-white dark" id="header__navbar">
+      <div class="container f-row" id="header__navbar-container">
+        <a href="#"><img id="header__navbar-logo" src="./img/logos/logo__jrwt.png" /></a>
+        <ul class="f-row grey" id="header__navbar-menulist">
           <li class="orange-hover"><a href="#">Home</a></li>
-          <li class="orange-hover"><a href="#dates">Dates</a></li>
-          <li class="orange-hover"><a href="#band">Band</a></li>
+          <li class="orange-hover"><a href="#global-dates">Dates</a></li>
+          <li class="orange-hover"><a href="#band-members">Band</a></li>
           <li class="orange-hover"><a href="#">Music</a></li>
+          <li class="orange-hover"><a href="./about.html">About Us</a></li>
           <li>
-            <button class="btn-orange fs-18 ff-1 ai-center">
+            <button class="btn-orange">
               <a href="#">Buy tickets</a>
             </button>
           </li>
-          <li class="orange-hover"><a href="./about.html">About Us</a></li>
         </ul>
       </div>
     </nav>
   </header>
+
   <main>
+    <!-- /* Front page */ -->
     <section class="grid" id="front-page">
-      <div class="container f-col g-50" id="front-page__content">
-        <div class="f-col g-20">
-          <div class="f-col g-20 orange" id="front-page__title">
-            <h2 class="ff-3 fs-60">"The Unforgettable Odyssey"</h2>
-            <h1 class="ff-2 fs-100 fw-bold">JOSHUA</h1>
-            <h1 class="ff-2 fs-100 fw-bold w-50 ta-right">REDMAN</h1>
-            <h1 class="ff-2 fs-80 fw-lighter ta-right max-w-66" id="front-page__title__world-tour">
-              WORLD TOUR<br />2023
+
+      <nav class="grid" id="menu--mobile-version">
+        <i class="bi bi-list" id="menu__btn--mobile-version"></i>
+        <ul class="container f-col" id="menu__menulist--mobile-version">
+          <li class="btn-grey"><a href=".#">Home</a></li>
+          <li class="btn-grey"><a href="#global-dates">Dates</a></li>
+          <li class="btn-grey"><a href="#band-members">Band</a></li>
+          <li class="btn-grey"><a href="#">Music</a></li>
+          <li class="btn-orange"><a href="#">Buy tickets</a></li>
+          <li class="btn-grey"><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="container" id="front-page__container">
+        <div class="f-col orange" id="front-page__content">
+          <div class="f-col" id="front-page__title">
+            <h2 class="ff-1 fw-normal">"The Unforgettable Odyssey"</h2>
+            <h1 class="ff-2 fw-lighter">JOSHUA REDMAN <br />WORLD TOUR <br />2023
             </h1>
           </div>
-          <div class="bg-lighter box f-row border-white max-w-66" id="front-page__body-text">
-            <p class="fs-20">
-              Embark on a global musical journey with Joshua Redman and
-              experience the Legendary Saxophonist's Unforgettable Jazz
-              Odyssey across all Continents in 2023.
-            </p>
+          <p class="fw-bold infobox-1 fw-normal">
+            Embark on a global musical journey with Joshua Redman and
+            experience the Legendary Saxophonist's Unforgettable Jazz Odyssey
+            across all Continents in 2023.
+          </p>
+          <div>
+            <h3 class="grey ff-2 fw-lighter">2023.05.25(NY) ~ 10.31(BER)</h2>
+              <h4 class="grey ff-1">
+                @ Lincoln Center for the Performing Arts, New York and much more
+            </h3>
           </div>
-        </div>
-        <div>
-          <h2 class="fs-40 grey">May 25, 2023 ~ Oct 31, 2023</h2>
-          <h3 class="fs-25 grey">
-            @ Lincoln Center for the Performing Arts, New York and much more
-          </h3>
         </div>
       </div>
     </section>
 
-    <section class="grid bg-pattern-1 bg-dark white" id="dates">
-      <div class="container f-col ai-center m-section">
-        <h2 class="white fs-30">
+    <!-- /* Global Dates */ -->
+    <section class="grid bg-dark white" id="global-dates">
+      <div class="container f-col" id="global-dates__container">
+        <h2 class="ta-center">
           Global Schedule<br />
           <hr class="line-orange" />
         </h2>
 
-        <div class="f-row w-100 jc-between g-3 m-40" id="dates__container">
-          <div class="f-row g-3 w-100 dates__paired">
-            <a class="w-100" href="#">
-              <div class="box transparent h-100 f-col ai-center border-white-hover g-17">
-                <i class="bi bi-globe-americas fs-40"></i>
-                <h3 class="orange fs-25 ta-center">Americas</h3>
-                <p class="ta-center fs-18">
-                  Featuring captivating performances in the United States,
-                  Canada, Brazil, Argentina, and much more.
-                </p>
-              </div>
-            </a>
+        <div class="f-col" id="global-dates__boxes">
+          <a href="#">
+            <div class="global-dates__box">
+              <i class="bi bi-globe-americas"></i>
+              <h3 class="orange">Americas</h3>
+              <p class="fw-normal">
+                Featuring captivating performances in the United States,
+                Canada, Brazil, Argentina, and much more.
+              </p>
+            </div>
+          </a>
 
-            <a class="w-100" href="#">
-              <div class="box transparent h-100 f-col ai-center border-white-hover g-17">
-                <i class="bi bi-globe-europe-africa fs-40"></i>
-                <h3 class="orange fs-25 ta-center">Africa & Europe</h3>
-                <p class="ta-center fs-18">
-                  Showcasing unforgettable concerts in France, South Africa,
-                  Germany, Morocco, and much more.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="f-row g-3 w-100 dates__paired">
-            <a class="w-100" href="#">
-              <div class="box transparent h-100 f-col ai-center border-white-hover g-17">
-                <i class="bi bi-globe-asia-australia fs-40"></i>
-                <h3 class="orange fs-25 ta-center">Asia & Australia</h3>
-                <p class="ta-center fs-18">
-                  Thrilling performances in Japan, Australia, China, India,
-                  and much more.
-                </p>
-              </div>
-            </a>
+          <a href="#">
+            <div class="global-dates__box">
+              <i class="bi bi-globe-europe-africa"></i>
+              <h3 class="orange">Africa & Europe</h3>
+              <p class="fw-normal">
+                Showcasing unforgettable concerts in France, South Africa,
+                Germany, Morocco, and much more.
+              </p>
+            </div>
+          </a>
 
-            <a class="w-100" href="#">
-              <div class="box transparent h-100 f-col ai-center border-white-hover g-17">
-                <i class="bi bi-globe fs-40"></i>
-                <h3 class="orange fs-25 ta-center">Globe</h3>
-                <p class="ta-center fs-18">
-                  Check the complete list of global concerts here!
-                </p>
-              </div>
-            </a>
-          </div>
+          <a href="#">
+            <div class="global-dates__box">
+              <i class="bi bi-globe-central-south-asia"></i>
+              <h3 class="orange">South Asia</h3>
+              <p class="fw-normal">
+                Unforgettable performances in India, Sri Lanka, Nepal, and much more.
+              </p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="global-dates__box">
+              <i class="bi bi-globe-asia-australia"></i>
+              <h3 class="orange">Asia & Australia</h3>
+              <p class="fw-normal">
+                Thrilling performances in Japan, Australia, China, India, and
+                much more.
+              </p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="global-dates__box">
+              <i class="bi bi-globe"></i>
+              <h3 class="orange">Globe</h3>
+              <p class="fw-normal">
+                Check the complete list of global concerts here!
+              </p>
+            </div>
+          </a>
+
+          <a class="btn-orange" href="#" id="global-dates__btn-buy">Buy tickets</a>
+          <a class="ta-center fs-underline-hover" href="#" id="global-dates__whole-program">SEE THE WHOLE PROGRAM</a>
         </div>
-        <a class="ta-center underline-hover fs-18" href="#">SEE THE WHOLE PROGRAM</a>
       </div>
     </section>
-    <section class="grid" id="band">
-      <div class="container dark f-col ai-center m-section g-50">
-        <h2 class="fs-30 ta-center">
+    <section class="grid bg-white dark" id="band-members">
+      <div class="container f-col" id="band-members__container">
+
+        <h2 class="ta-center">
           Band Members<br />
           <hr class="line-orange" />
         </h2>
-        <div class="container f-col g-70 f-wrap" id="band__band-members-cards">
 
+        <div class="f-col" id="band-members__cards">
         </div>
+
+        <button id="band-members__btn-more">
+          MORE
+          <i class="bi bi-chevron-down orange" id="btn-more__chevron-icon"></i>
+        </button>
       </div>
     </section>
-    <section class="grid bg-grey" id="support">
-      <div class="container light f-col g-80 m-section">
-        <div>
-          <h2 class="fs-30 ta-center fw-normal">
-            Partners<br />
-            <hr class="line-orange" />
-          </h2>
-          <div class="f-row g-70 jc-center m-40 ai-center f-wrap">
-            <a href="#"><img class="support__logo" src="./visuals/logo-jalc.png" /></a>
-            <a href="#"><img class="support__logo" src="./visuals/logo-berklee.png" /></a>
-          </div>
-        </div>
-        <div>
-          <h2 class="fs-30 ta-center fw-normal">
-            Sponsors<br />
-            <hr class="line-orange" />
-          </h2>
-          <div class="f-row g-70 jc-center m-40 ai-center f-wrap">
-            <a href="#"><img class="support__logo" src="./visuals/logo-sas.png" /></a>
-            <a href="#"><img class="support__logo" src="./visuals/logo-spotify.png" /></a>
-            <a href="#"><img class="support__logo" src="./visuals/logo-bose.png" /></a>
-          </div>
-        </div>
-        <div>
-          <h2 class="fs-30 ta-center fw-normal">
-            Producers<br />
-            <hr class="line-orange" />
-          </h2>
-          <div class="f-row g-70 jc-center m-40 ai-center f-wrap">
-            <a href="#"><img class="support__logo" src="./visuals/logo-wmg.png" /></a>
-            <a href="#"><img class="support__logo" src="./visuals/logo-jrwt.png" /></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <a href="#">
-      <div class="bg-orange jc-center white p-10 f-col ai-center ji-center" id="back-to-top-button">
-        <i class="bi bi-chevron-up"></i>
-      </div>
-    </a>
   </main>
-  <script type="text/javascript" src="./script.js"></script>
+
+  <section class="grid bg-grey white ta-center" id="index-partner">
+    <div class="container f-col" id="index-partner__container">
+      <div id="index-partner__title">
+        <h2 class="fw-normal">
+          Partner<br />
+          <hr class="line-orange" />
+        </h2>
+      </div>
+      <div class="f-row f-wrap" id="partner__logos">
+        <a href="#"><img class="partner__logo" src="./img/logos/logo__jalc.png" /></a>
+        <a href="#"><img class="partner__logo" src="./img/logos/logo__berklee.png" /></a>
+        <a href="#"><img class="partner__logo" src="./img/logos/logo__sas.png" /></a>
+        <a href="#"><img class="partner__logo" src="./img/logos/logo__spotify.png" /></a>
+        <a href="#"><img class="partner__logo" src="./img/logos/logo__wmg.png" /></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="grid bg-white dark" id="index-footer">
+    <div class="container f-row" id="index-footer__container">
+      <a class="f-row" href="./index.html"><img id="footer__logo" src="./img/logos/logo__jrwt.png" /></a>
+      <div class="f-col">
+        <p>
+          Joshua Redman World Tour 2023. Some rights reserved. <br />
+          ©Joshua Redman WT Team.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#">
+    <div class="bg-orange jc-center white p-10 f-col ai-center ji-center" id="back-to-top-button">
+      <i class="bi bi-chevron-up"></i>
+    </div>
+  </a>
+  </main>
+  <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>

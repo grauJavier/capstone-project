@@ -11,160 +11,152 @@
 </head>
 
 <body>
-  <header>
-    <div class="bg-dark grid">
-      <ul class="white container f-row js-left g-20 ai-center fs-20">
-        <li>
-          <a href="#"><i class="bi bi-facebook lighter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="bi bi-twitter lighter"></i></a>
-        </li>
-        <li class="fs-18 underline-hover"><a href="#">Español</a></li>
-      </ul>
-    </div>
-    <nav class="bg-white grid">
-      <div class="container f-row ai-center jc-between" id="navbar__container">
-        <div class="f-row jc-between" id="navbar__button-logo">
-          <div id="hamburger">
-            <i class="bi bi-list fs-40"></i>
-          </div>
-          <a href="./index.html">
-            <img id="navbar__logo" src="./visuals/logo-jrwt.png" />
-          </a>
-        </div>
-        <ul class="f-col g-20 fs-20 fw-bold w-84 m-25" id="navbar__hamburguer__menulist">
-          <li class="btn-grey">
-            <a class="w-100 ta-center" href="./index.html">Home</a>
-          </li>
-          <li class="btn-grey">
-            <a class="w-100 ta-center" href="./index.html#dates">Dates</a>
-          </li>
-          <li class="btn-grey">
-            <a class="w-100 ta-center" href="./index.html#band">Band</a>
-          </li>
-          <li class="btn-grey">
-            <a class="w-100 ta-center" href="#">Music</a>
-          </li>
-          <li class="btn-orange">
-            <a class="w-100 ta-center" href="#">Buy tickets</a>
-          </li>
-          <li class="btn-grey">
-            <a class="w-100 ta-center" href="#">About Us</a>
-          </li>
+  <header id="header">
+
+    <div class="grid bg-dark white" id="header__top-black-bar">
+      <div class="container" id="header__top-black-bar-container">
+        <ul class="f-row" id="header__top-black-bar-list">
+          <li><a href="#"><i class="bi bi-facebook lighter"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter lighter"></i></a></li>
+          <li><a class="fs-underline-hover" href="#">Español</a></li>
         </ul>
-        <ul class="f-row g-70 jc-around ai-center fs-18 grey" id="navbar__menulist">
+      </div>
+    </div>
+
+    <nav class="grid bg-white dark" id="header__navbar">
+      <div class="container f-row" id="header__navbar-container">
+        <a href="./index.html"><img id="header__navbar-logo" src="./img/logos/logo__jrwt.png" /></a>
+        <ul class="f-row grey" id="header__navbar-menulist">
           <li class="orange-hover"><a href="./index.html">Home</a></li>
-          <li class="orange-hover"><a href="./index.html#dates">Dates</a></li>
-          <li class="orange-hover"><a href="./index.html#band">Band</a></li>
+          <li class="orange-hover"><a href="./index.html#global-dates">Dates</a></li>
+          <li class="orange-hover"><a href="./index.html#band-members">Band</a></li>
           <li class="orange-hover"><a href="#">Music</a></li>
+          <li class="orange-hover"><a href="#">About Us</a></li>
           <li>
-            <button class="btn-orange fs-18 ff-1 ai-center">
+            <button class="btn-orange">
               <a href="#">Buy tickets</a>
             </button>
           </li>
-          <li class="orange-hover"><a href="#">About Us</a></li>
         </ul>
       </div>
     </nav>
+
   </header>
+
   <main>
     <section class="grid" id="about">
-      <div class="container f-col g-50 ai-center m-section">
-        <div class="f-col g-20 orange">
-          <h1 class="ff-2 fs-80 ta-center fw-lighter">
+
+      <nav class="grid" id="menu--mobile-version">
+        <i class="bi bi-list" id="menu__btn--mobile-version"></i>
+        <ul class="container f-col" id="menu__menulist--mobile-version">
+          <li class="btn-grey"><a href="./index.html">Home</a></li>
+          <li class="btn-grey"><a href="./index.html#global-dates">Dates</a></li>
+          <li class="btn-grey"><a href="./index.html#band-members">Band</a></li>
+          <li class="btn-grey"><a href="#">Music</a></li>
+          <li class="btn-orange"><a href="#">Buy tickets</a></li>
+          <li class="btn-grey"><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="container f-col" id="about__container">
+        <div class="f-col orange ta-center" id="about__title">
+          <h2 class="ff-1 fw-normal">"The Unforgettable Odyssey"</h2>
+          <h1 class="ff-2 fw-lighter">
             JOSHUA REDMAN <br />WORLD TOUR 2023
+            <hr class="line-orange" />
           </h1>
-          <hr class="line-orange" />
         </div>
-        <div class="bg-white box f-row border-light max-w-75 jc-center">
-          <p class="fs-18 dark ta-center max-w-84">
-            From the vibrant energy of the Americas to the enchanting
-            landscapes of Africa and Europe, and the rich cultural tapestry of
-            Asia and Australia, the tour embraces diverse cultures, showcasing
-            the beauty of music's ability to unite people from all walks of
-            life.<br />
-            With each concert, the tour promises an unforgettable experience
-            that will leave you inspired, moved, and craving for more.<br />
-            Prepare to be captivated as Joshua Redman, the legendary jazz
-            saxophonist and composer, takes center stage, bringing his
-            unparalleled talent and passion to each performance.<br />
-            Don't miss this extraordinary opportunity to embark on a musical
-            journey like no other with the Joshua Redman World Tour 2023.
-          </p>
-        </div>
-        <p class="fs-18 dark ta-center fw-bold max-w-84">
+        <p class="infobox-2 ta-center">
+          From the vibrant energy of the Americas to the enchanting
+          landscapes of Africa and Europe, and the rich cultural tapestry of
+          Asia and Australia, the tour embraces diverse cultures, showcasing
+          the beauty of music's ability to unite people from all walks of
+          life.
+        </p>
+        <p class="dark ta-center fw-normal" id="about__contact-text">
           Please contact us per Email for any further questions about Joshua
           Redman WT 2023!<br />
-          <a href="#"><span class="fw-bolder underline-hover">contact@joshuaredmanwt2023.com
-              <i class="bi bi-chevron-right fs-16"></i></span></a>
+          <a href="#"><span class="fw-bold fs-underline">contact@joshuaredmanwt2023.com
+              <i class="bi bi-chevron-right"></i></span></a>
         </p>
       </div>
     </section>
-    <section class="grid bg-white border-light" id="embark">
-      <div class="container f-col g-30 ai-center js-center m-section max-w-75">
-        <h2 class="dark fs-30">
+    <section class="grid bg-whit dark ta-center" id="embark">
+      <div class="container f-col" id="embark__container">
+        <h2 class="">
           Embark with us<span class="orange">!</span><br />
           <hr class="line-orange" />
         </h2>
-        <p class="fs-18 max-w-84 ta-center">
+        <p id="embark__text-body">
           <span class="fw-bold fs-italic">If you believe that our world tour should include your
             city,</span>
           join us on an incredible musical journey! we invite you to reach out
           and let us know.
-          <a href="#"><span class="fs-18 fw-bold underline-hover">Contact us </span></a>
+          <a href="#"><span class="fw-bold">Contact us </span></a>
           today to explore the possibilities of bringing our captivating
           performances to your doorstep!
         </p>
-        <p class="fs-18 max-w-84 ta-center fs-italic">
+        <p class="fs-italic" id="embark__text-thank-you">
           Thank you very much, <br />from Joshua Redman WT Team!
         </p>
-        <img id="embark__logo" src="./visuals/logo-jrwt.png" />
+        <img id="embark__logo" src="./img/logos/logo__jrwt.png" />
       </div>
     </section>
-    <section class="grid" id="past-wt">
-      <div class="container dark f-col ai-center m-section g-30">
-        <h2 class="fs-30 ta-center">
-          See the past Joshua Redman World Tours<br />
-          <hr class="line-orange" />
-        </h2>
-        <p class="fs-18 ta-center">
-          Take a look to the last two World Tours of Joshua Redman.
-        </p>
-        <div class="f-row white w-75 g-10 jc-center" id="past-wt__container">
-          <a href="#">
-            <div class="f-col ta-center older-wt w-100 p-30 jc-center" id="wt-japan">
-              <h3 class="fs-40 ff-2 fw-lighter">2019</h3>
-              <span class="fs-18">Joshua Redman WT culmination in Japan</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="f-col ta-center older-wt w-100 p-30 jc-center" id="wt-brazil">
-              <h3 class="fs-40 ff-2 fw-lighter">2021</h3>
-              <span class="fs-18">Joshua Redman WT culmination in Brazil</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <footer class="grid bg-grey white fs-1">
-      <div class="container m-25 f-row g-50">
-        <div class="f-row g-20 ai-center" id="footer__address">
-          <a href="./index.html">
-            <img id="navbar__logo" src="./visuals/logo-jrwt.png" />
-          </a>
+    <section class="grid dark" id="past-wt">
+      <div class="container f-col ta-center" id="past-wt__container">
+        <div id="past-wt__texts">
+          <h2>
+            See the past Joshua Redman WT<br />
+            <hr class="line-orange" />
+          </h2>
           <p>
-            <span class="fw-bold">Contact Information</span><br />
-            123 Main Street, New York, NY 10001<br />
-            info@joshuaredmanwt.com<br />
-            +1 (555) 123-4567<br />
+            Take a look to the last two World Tours of Joshua Redman.
           </p>
         </div>
-        <ul class="f-col jc-between" id="footer__faq">
-          <li class="underline-hover">Privacy Policy</li>
-          <li class="underline-hover">Terms & Conditions</li>
-          <li class="underline-hover">FAQ</li>
-        </ul>
+        <div class="f-col white" id="past-wt__boxes">
+          <a href="#">
+            <div class="f-col older-wt-box" id="wt-japan">
+              <h3 class="ff-2 fw-lighter">2019</h3>
+              <p>Joshua Redman WT culmination in Japan</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="f-col older-wt-box" id="wt-brazil">
+              <h3 class="ff-2 fw-lighter">2021</h3>
+              <p>Joshua Redman WT culmination in Brazil</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid bg-grey white ta-center" id="about-partner">
+      <div class="container f-col" id="about-partner__container">
+        <div id="about-partner__title">
+          <h2 class="fw-normal">
+            Partner<br />
+            <hr class="line-orange" />
+          </h2>
+        </div>
+        <div class="f-row f-wrap" id="partner__logos">
+          <a href="#"><img class="partner__logo" src="./img/logos/logo__jalc.png" /></a>
+          <a href="#"><img class="partner__logo" src="./img/logos/logo__berklee.png" /></a>
+          <a href="#"><img class="partner__logo" src="./img/logos/logo__sas.png" /></a>
+          <a href="#"><img class="partner__logo" src="./img/logos/logo__spotify.png" /></a>
+          <a href="#"><img class="partner__logo" src="./img/logos/logo__wmg.png" /></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="grid bg-white dark" id="about-footer">
+      <div class="container f-row" id="about-footer__container">
+        <a class="f-row" href="./index.html"><img id="footer__logo" src="./img/logos/logo__jrwt.png" /></a>
+        <div class="f-col">
+          <p>
+            Joshua Redman World Tour 2023. Some rights reserved. <br />
+            ©Joshua Redman WT Team.
+          </p>
+        </div>
       </div>
     </footer>
 
@@ -174,7 +166,13 @@
       </div>
     </a>
   </main>
-  <script type="text/javascript" src="./script.js"></script>
+  <a href="#">
+    <div class="bg-orange jc-center white p-10 f-col ai-center ji-center" id="back-to-top-button">
+      <i class="bi bi-chevron-up"></i>
+    </div>
+  </a>
+  </main>
+  <script type="text/javascript" src="./js/about.js"></script>
 </body>
 
 </html>

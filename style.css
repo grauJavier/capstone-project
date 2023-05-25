@@ -1,7 +1,9 @@
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,10 @@
 
 html {
   font-size: 62.5%;
+}
+
+section {
+  padding: 3rem 0;
 }
 
 a {
@@ -29,14 +35,80 @@ textarea {
   resize: none;
 }
 
-body {
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+
+/* Text alignment styles */
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+/* Font families */
+body,
+.ff-1 {
   font-family: "Lato", sans-serif;
 }
 
-/* DISPLAYS */
+.ff-2 {
+  font-family: "Cocogoose", sans-serif;
+}
+
+.ff-3 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fw-lighter {
+  font-weight: lighter;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+.fs-underline {
+  text-decoration: underline;
+}
+
+.fs-underline-hover:hover {
+  text-decoration: underline;
+}
+
+/* Grid styles */
 .grid {
   display: grid;
-  grid-template-columns: 11.81vw 1fr 11.81vw;
+  grid-template-columns: 5vw 1fr 5vw;
 }
 
 .container {
@@ -44,10 +116,7 @@ body {
   padding: 0.8rem 0;
 }
 
-.d-inline {
-  display: inline;
-}
-
+/* Flexbox styles */
 .f-row {
   display: flex;
   flex-direction: row;
@@ -62,167 +131,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* SIZES */
-
-.w-100 {
-  width: 100%;
-}
-
-.w-84 {
-  width: 84%;
-}
-
-.w-75 {
-  width: 84%;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.w-30 {
-  width: 30%;
-}
-
-.w-10 {
-  width: 10%;
-}
-
-.max-w-66 {
-  max-width: 66%;
-}
-
-.max-w-75 {
-  max-width: 75%;
-}
-
-.max-w-84 {
-  max-width: 84%;
-}
-
-.min-w-630 {
-  min-width: 630px;
-}
-
-.h-100 {
-  height: 100%;
-}
-
-.h-30 {
-  height: 30%;
-}
-
-/* GAPS */
-
-.g-3 {
-  gap: 3px;
-}
-
-.g-10 {
-  gap: 10px;
-}
-
-.g-17 {
-  gap: 17px;
-}
-
-.g-20 {
-  gap: 20px;
-}
-
-.g-30 {
-  gap: 30px;
-}
-
-.g-50 {
-  gap: 50px;
-}
-
-.g-70 {
-  gap: 70px;
-}
-
-.g-80 {
-  gap: 70px;
-}
-
-/* MARGIN & PADDINGS */
-
-.m-section {
-  margin: 8vh 0;
-}
-
-.m-70 {
-  margin: 7rem 0;
-}
-
-.m-40 {
-  margin: 4rem 0;
-}
-
-.m-25 {
-  margin: 2.5rem 0;
-}
-
-.p-10 {
-  padding: 1rem;
-}
-
-.p-30 {
-  padding: 3rem;
-}
-
-/* ALIGNMENTS */
-
-.jc-center {
-  justify-content: center;
-}
-
-.jc-between {
-  justify-content: space-between;
-}
-
-.jc-around {
-  justify-content: space-around;
-}
-
-.ta-center {
-  text-align: center;
-}
-
-.ta-right {
-  text-align: right;
-}
-
-.ai-center {
-  align-items: center;
-}
-
-.ai-end {
-  align-items: end;
-}
-
-.ac-center {
-  align-content: center;
-}
-
-.ji-center {
-  justify-items: center;
-}
-
-.as-center {
-  align-self: center;
-}
-
-.js-center {
-  justify-self: center;
-}
-
-.js-left {
-  justify-self: end;
-}
-
-/* COLORS */
+/* Background colors */
 .bg-black {
   background-color: #000;
 }
@@ -251,6 +160,7 @@ body {
   background-color: #ec5242;
 }
 
+/* Color styles */
 .black {
   color: #000;
 }
@@ -279,183 +189,339 @@ body {
   color: #ec5242;
 }
 
-.transparent {
-  background-color: #ffffff1a;
+.orange-hover:hover {
+  color: #ec5242;
 }
 
-/* BACKGROUND PATTERNS */
-
-.bg-pattern-1 {
-  background-image: url("./visuals/pattern_bg.png");
-  background-repeat: repeat;
+/* Horizontal line styles */
+.line-orange {
+  border: 0;
+  border-bottom: 1px solid #ec5242;
+  margin: 1.2rem auto;
+  width: 3rem;
 }
 
-/* FONTS PROPERTIES */
-.ff-1 {
-  font-family: "Lato", sans-serif;
+.line-light {
+  border: 0;
+  border-bottom: 1px solid #d3d3d3;
+  width: 1.5rem;
 }
 
-.ff-2 {
-  font-family: "Cocogoose", sans-serif;
-}
-
-.ff-3 {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.fs-100 {
-  font-size: 10rem;
-  line-height: 1em;
-}
-
-.fs-80 {
-  font-size: 8rem;
-  line-height: 0.85em;
-}
-
-.fs-60 {
-  font-size: 6rem;
-}
-
-.fs-40 {
-  font-size: 4rem;
-}
-
-.fs-30 {
-  font-size: 3rem;
-}
-
-.fs-25 {
-  font-size: 2.5rem;
-}
-
-.fs-20 {
-  font-size: 2rem;
-}
-
-.fs-18 {
-  font-size: 1.8rem;
-  line-height: 3rem;
-}
-
-.fs-16 {
-  font-size: 1.6rem;
-}
-
-.fw-bold {
-  font-weight: bold;
-}
-
-.fw-bolder {
-  font-weight: 900;
-}
-
-.fw-normal {
-  font-weight: normal;
-}
-
-.fw-lighter {
-  font-weight: lighter;
-}
-
-.fs-italic {
-  font-style: italic;
-}
-
-/* BUTTONS */
-
+/* Buttons styles */
 .btn-orange {
   font-family: inherit;
   color: #fff;
   background-color: #ec5242;
-  border: 4px solid #ec5242;
-  padding: 2px 6px;
+  border: 0.4rem solid #ec5242;
+  padding: 0.2rem 1rem;
   line-height: 2em;
 }
 
 .btn-orange:hover {
+  font-family: inherit;
   color: #ec5242;
-  background-color: #fff0;
+  background-color: #fff;
 }
 
 .btn-grey {
   font-family: inherit;
   color: #fff;
   background-color: #545454;
-  border: 4px solid #545454;
-  padding: 2px 6px;
+  border: 0.4rem solid #545454;
+  padding: 0.2rem 0.6rem;
   line-height: 2em;
 }
 
-/* LINES */
-
-.line-orange {
-  border: 0;
-  border-bottom: 1px solid #ec5242;
-  margin: 18px auto;
-  width: 53px;
+/* Hidden elements */
+#global-dates__whole-program,
+#index-partner,
+#index-footer,
+#about__title .line-orange {
+  display: none;
 }
 
-.line-light {
-  border: 0;
-  border-bottom: 1px solid #d3d3d3;
-  width: 45px;
+/* MOBILE VERSION */
+
+/* Front page */
+#front-page {
+  background-image: url(./img/backgrounds/background__front-page.jpg);
+  background-size: cover;
+  background-position: 60rem;
+  background-attachment: fixed;
+  padding: 0;
 }
 
-/* CONTAINERS */
-
-.box {
-  padding: 25px;
+#front-page__container {
+  margin: 7rem 0 6rem 0;
 }
 
-.border-white {
-  border: 4px solid #fff;
+#front-page__content {
+  gap: 1.5rem;
 }
 
-.border-light {
+#front-page__title {
+  mix-blend-mode: color-burn;
+  filter: contrast(120%) saturate(200%);
+}
+
+.infobox-1 {
+  color: #414246;
+  background-color: #f6f6f7;
+  border: 2px solid #fff;
+  padding: 1.2rem;
+  width: 103%;
+  align-self: center;
+  margin: 1rem 0;
+}
+
+.infobox-2 {
+  color: #414246;
+  background-color: #fff;
   border: 1px solid #d3d3d3;
+  padding: 1.2rem;
+  width: 103%;
+  align-self: center;
+  margin: 1rem 0;
 }
 
-.border-grey {
-  border: 1px solid #d3d3d3;
+/* Global Dates */
+#global-dates {
+  background-image: url("./img/backgrounds/background__pattern.png");
+  background-repeat: repeat;
+  background-size: 2.5rem;
+  padding-bottom: 1rem;
 }
 
-.border-white-hover {
-  border: 3px solid #fff0;
+#global-dates__boxes {
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
-.border-white-hover:hover {
-  border: 3px solid #fff;
+.global-dates__box {
+  display: grid;
+  grid-template-columns: 10% 25% 65%;
+  padding: 1.5rem;
+  gap: 1rem;
+  min-height: 11rem;
+  align-items: center;
+  background-color: #ffffff1a;
 }
 
-.fixed {
-  position: fixed;
+.global-dates__box i {
+  grid-column: 1/2;
+  font-size: 2.5rem;
+  align-self: center;
 }
 
-/* EFFECTS */
-nav {
-  width: 100%;
+.global-dates__box h3 {
+  grid-column: 2/3;
+  font-size: 1.5rem;
+}
+
+.global-dates__box p {
+  grid-column: 3/4;
+  font-size: 1.3rem;
+  width: 92%;
+}
+
+#global-dates__btn-buy {
+  display: block;
+  min-width: 77%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3rem auto 0 auto;
+  padding: 1rem 0;
+}
+
+/* Band Members */
+#band-members__cards {
+  margin: 1.5rem 0;
+  gap: 3rem;
+}
+
+.band-members__paired-cards2 {
+  display: none;
+}
+
+.band-members__paired-cards0,
+.band-members__paired-cards2 {
+  gap: 3rem;
+}
+
+.band-members__card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.band-members__card-portrait {
+  max-width: 10rem;
+  box-shadow: -4rem -4rem 0 -2rem;
+  margin: 2rem 0 0 2rem;
+  grid-column: 1/2;
+}
+
+.band-members__card-texts {
+  gap: 1rem;
+}
+
+.band-members__card-title {
+  font-size: 1.5rem;
+}
+
+.band-members__card-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+#band-members__btn-more {
+  font-family: "Lato", sans-serif;
+  color: #414246;
+  padding: 1rem 0;
+  background-color: #fff;
+  border: 0.1rem solid #d3d3d3;
+  border-radius: 0.3rem;
+}
+
+/* Menu */
+#menu--mobile-version {
+  margin: 2vmin 0 0 5vmin;
+}
+
+#menu--mobile-version i {
+  font-size: 3rem;
+}
+
+#menu__btn--mobile-version {
   z-index: 2;
+}
+
+#menu__menulist--mobile-version {
+  background-color: #fff;
+  gap: 1rem;
+  z-index: 1;
+  padding: 4rem 1rem 1rem 1rem;
+  border: 1px solid #d3d3d3;
+  position: fixed;
+  width: 90vw;
   box-shadow: rgba(0, 0, 0, 0.28) 0 1px 13px;
-  position: relative;
+  display: none;
 }
 
-.underline-hover:hover {
-  text-decoration: underline;
+#menu__menulist--mobile-version a {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0.6rem 0;
 }
 
-.orange-hover:hover {
-  color: #ec5242;
+/* About Page */
+
+/* About */
+
+#about {
+  background-image: url(./img/backgrounds/background__about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 0;
 }
 
+#about__container {
+  margin-top: 7rem;
+  gap: 2rem;
+}
+
+#about__contact-text i {
+  font-size: 1rem;
+}
+
+/* Embark with us! */
+#embark {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#embark__container {
+  gap: 2rem;
+  align-items: center;
+}
+
+#embark__logo {
+  max-width: 18rem;
+}
+
+/* Older Joshua Redman WT */
+#past-wt__container {
+  gap: 3rem;
+}
+
+#past-wt__boxes {
+  gap: 1.5rem;
+}
+
+.older-wt-box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  filter: saturate(120%);
+  box-shadow: #ec5342b2 0 0 0 500px inset;
+  height: 20rem;
+  justify-content: center;
+}
+
+.older-wt-box:hover {
+  box-shadow: #0000006f 0 0 0 500px inset;
+}
+
+#wt-japan {
+  background-image: url("./img/backgrounds/wt-box-background__japan.jpg");
+}
+
+#wt-brazil {
+  background-image: url("./img/backgrounds/wt-box-background__brazil.jpg");
+}
+
+/* Partner */
+#partner__container {
+  gap: 2rem;
+}
+
+#partner__logos {
+  justify-content: center;
+  gap: 1.88rem;
+  align-items: center;
+}
+
+.partner__logo {
+  width: 10rem;
+  filter: saturate(0%) opacity(50%);
+}
+
+.partner__logo:hover {
+  filter: saturate(100%) opacity(100%);
+}
+
+#about-footer__container,
+#index-footer__container {
+  gap: 2rem;
+  align-items: center;
+}
+
+#footer__logo {
+  padding: 3rem 0;
+  width: 10rem;
+}
+
+/* Back to top button */
 #back-to-top-button {
   position: fixed;
   font-size: 2rem;
   rotate: 45deg;
-  width: 35px;
-  height: 35px;
-  bottom: 35px;
-  right: 35px;
+  width: 3.5rem;
+  height: 3.5rem;
+  bottom: 3.5rem;
+  right: 3.5rem;
   box-shadow: #0006 4px 4px 13px;
   transition: opacity 0.4s;
   opacity: 0;
@@ -467,265 +533,271 @@ nav {
   position: relative;
   bottom: 2px;
   right: 2px;
+  margin: auto;
 }
 
-.show {
-  display: flex !important;
-  opacity: 1 !important;
-}
-
-/* LOGO */
-#navbar__logo {
-  width: 17rem;
-}
-
-/* FRONT-PAGE */
-
-.bi-facebook:hover {
-  color: #1b74e4;
-}
-
-.bi-twitter:hover {
-  color: #1d9bf0;
-}
-
-#front-page {
-  background-image: url(./visuals/front-page-background.jpg);
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-}
-
-#front-page__content {
-  margin: 16.6vh 0;
-}
-
-#front-page__title {
-  mix-blend-mode: color-burn;
-  filter: contrast(120%) saturate(200%);
-}
-
-.support__logo {
-  width: 20rem;
-  filter: saturate(0%) opacity(50%);
-}
-
-.support__logo:hover {
-  filter: saturate(100%) opacity(100%);
-}
-
-/* BAND MEMBERS PAGE */
-
-.band-member-cards__portrait {
-  margin-top: 28px;
-  margin-left: 28px;
-  max-width: 170px;
-  max-height: 170px;
-  box-shadow: -70.84px -70.84px 0 -42.5px;
-}
-
-/* ABOUT PAGE */
-#about {
-  background-image: url(./visuals/about-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#embark__logo {
-  max-width: 33rem;
-  width: 100%;
-}
-
-.older-wt {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  filter: saturate(120%);
-  box-shadow: #ec5342b2 0 0 0 500px inset;
-  height: 20rem;
-}
-
-.older-wt:hover {
-  box-shadow: #0000006f 0 0 0 500px inset;
-}
-
-#wt-japan {
-  background-image: url("./visuals/wt-japan.jpg");
-}
-
-#wt-brazil {
-  background-image: url("./visuals/wt-brazil.jpg");
-}
-
-/* Mobile Menu */
-
-#hamburger {
+/* Hidden elements */
+#header,
+#header__top-black-bar-container {
   display: none;
 }
 
-.bi-x {
-  position: relative;
-  top: 0;
-}
-
-#navbar__hamburguer__menulist {
-  display: none;
-  opacity: 0;
-}
-
-@media only screen and (max-width: 1250px) {
-  .grid {
-    grid-template-columns: 7vw 1fr 7vw;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  #navbar__container {
-    gap: 20px;
+/* Desktop version */
+@media only screen and (min-width: 768px) {
+  /* Global styles */
+  section {
+    padding: 4rem 0;
   }
 
-  #navbar__container,
-  #dates__container,
-  .band__paired-members,
-  #past-wt__container {
-    flex-direction: column;
+  h1 {
+    font-size: 8rem;
+    line-height: 8rem;
   }
 
-  #front-page__title h2 {
-    font-size: 5rem;
-  }
-
-  #front-page__title__world-tour,
-  #front-page__body-text {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .max-w-84 {
-    max-width: 100%;
-  }
-
-  #about h1 {
-    font-size: 7rem;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .max-w-75 {
-    max-width: 100%;
-  }
-
-  #navbar__menulist {
-    display: none;
-  }
-
-  #navbar__container {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 0;
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  #navbar__button-logo {
-    width: 100%;
-  }
-
-  #hamburger {
-    display: inline;
-  }
-
-  #navbar__logo {
-    width: 10rem;
-  }
-
-  #hamburger i {
-    font-size: 3rem;
-  }
-
-  #about h1 {
-    font-size: 5rem;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .dates__paired {
-    flex-direction: column;
-  }
-
-  #front-page {
-    background-position: -400px;
-  }
-}
-
-@media only screen and (max-width: 645px) {
-  #front-page {
-    background-position: -600px;
-  }
-
-  #front-page h2 {
+  h2 {
     font-size: 2.8rem;
   }
 
-  #front-page .fs-100 {
-    font-size: 7rem;
-    line-height: 0.8em;
-  }
-
-  #front-page__title__world-tour {
-    font-size: 6rem;
-  }
-
-  #front-page .fs-20,
-  #front-page .fs-25 {
-    font-size: 1.6rem;
-  }
-
-  #front-page .fs-40 {
-    font-size: 2.5rem;
-  }
-
-  #support h2 {
-    font-size: 2rem;
-  }
-
-  #about h1 {
+  h3 {
     font-size: 3rem;
   }
 
-  footer .g-50 {
-    gap: 20px;
+  h4 {
+    font-size: 1.8rem;
   }
 
-  footer .container {
+  p {
+    font-size: 1.5rem;
+  }
+
+  /* Hidden elements */
+  #menu--mobile-version,
+  #global-dates__btn-buy,
+  #band-members__btn-more,
+  #about__title h2,
+  #about-partner {
+    display: none;
+  }
+
+  /* Showed elements */
+  #global-dates__whole-program,
+  .band-members__paired-cards2,
+  #about__title .line-orange {
+    display: flex;
+  }
+
+  #index-partner,
+  #index-footer {
+    display: grid;
+  }
+
+  /* Grid styles */
+  .grid {
+    grid-template-columns: 11.8vw 1fr 11.8vw;
+  }
+
+  /* Header */
+  #header {
+    box-shadow: rgba(0, 0, 0, 0.28) 0 1px 13px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+
+  #header__top-black-bar-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  #header__top-black-bar-list {
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 1rem;
+  }
+
+  /* Navbar */
+  #header__navbar-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #header__navbar-logo {
+    width: 15rem;
+  }
+
+  #header__navbar-menulist {
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  /* Front page */
+  #front-page {
+    background-position: center;
+  }
+
+  #front-page__container {
+    margin: 7.8rem 0;
+  }
+
+  #front-page__content {
+    gap: 3rem;
+  }
+
+  #front-page__title {
+    gap: 1rem;
+  }
+
+  #front-page__title h2 {
+    font-size: 4rem;
+  }
+
+  #front-page .infobox-1 {
+    justify-self: flex-start;
+    width: 52%;
+    margin: 0 auto 0 0;
+  }
+
+  /* Global Dates */
+  #global-dates {
+    background-size: 3.5rem;
+    padding: 3rem 0;
+  }
+
+  #global-dates__boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.3rem;
+  }
+
+  .global-dates__box {
+    display: flex;
     flex-direction: column;
-  }
-
-  #footer__address {
-    flex-direction: column;
-  }
-
-  #footer__address p {
     text-align: center;
+    min-height: 24rem;
+    padding: 3rem;
+    border: 0.3rem solid #fff0;
   }
 
-  #footer__faq {
+  .global-dates__box i {
+    font-size: 3.5rem;
+  }
+
+  .global-dates__box:hover {
+    border: 0.3rem solid #fff;
+  }
+
+  #global-dates__whole-program {
+    grid-column: 1 / 6;
+    justify-self: center;
+    font-size: 1.8rem;
+    margin-top: 6rem;
+  }
+
+  /* Band Members */
+
+  #band-members__cards {
+    width: 100%;
+  }
+
+  .band-members__card-title {
+    font-size: 2.5rem;
+  }
+
+  .band-members__card-portrait {
+    max-width: 17rem;
+  }
+
+  /* Partner */
+  #index-partner {
+    color: #d3d3d3;
+  }
+
+  #partner__logos {
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partner__logo {
+    width: 15rem;
+  }
+
+  /* Footer */
+  #index-footer__container a,
+  #about-footer__container a {
+    width: 33.3%;
+    justify-content: center;
+  }
+
+  #footer__logo {
+    padding: 3rem 0;
+    width: 25rem;
+    align-self: center;
+  }
+
+  #index-footer__container p,
+  #about-footer__container p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  /* About page */
+
+  /* About */
+  #about {
+    padding: 0;
+  }
+
+  #about__container {
+    margin: 12.8rem 0;
+  }
+
+  #about .infobox-2 {
+    width: 85%;
+    padding: 2rem 5rem;
+    line-height: 2.8rem;
+  }
+
+  /* Embark with us! */
+  #embark__text-body {
+    width: 85%;
+    padding: 0 5rem;
+    line-height: 2.8rem;
+  }
+
+  #embark__text-thank-you {
+    line-height: 2rem;
+  }
+
+  /* Older Joshua Redman WT */
+  #past-wt__boxes {
+    align-self: center;
     flex-direction: row;
-    justify-content: space-evenly;
+    width: 85%;
   }
-}
 
-@media only screen and (max-width: 580px) {
-  #band-member-cards__container {
-    flex-direction: column;
+  #past-wt__boxes a {
+    width: 100%;
+  }
+
+  .older-wt-box {
+    width: 100%;
+  }
+
+  /* About Footer */
+  #about-footer {
+    color: #d3d3d3;
+    background-color: #272a31;
+  }
+
+  #about-footer #footer__logo {
+    border: 3px solid #fff;
+    padding: 0;
+    margin: 3rem auto;
   }
 }
