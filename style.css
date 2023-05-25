@@ -67,7 +67,7 @@ p {
   text-align: right;
 }
 
-/* Font families */
+/* Font styles */
 body,
 .ff-1 {
   font-family: "Lato", sans-serif;
@@ -232,14 +232,6 @@ body,
   line-height: 2em;
 }
 
-/* Hidden elements */
-#global-dates__whole-program,
-#index-partner,
-#index-footer,
-#about__title .line-orange {
-  display: none;
-}
-
 /* MOBILE VERSION */
 
 /* Front page */
@@ -310,7 +302,7 @@ body,
 .global-dates__box i {
   grid-column: 1/2;
   font-size: 2.5rem;
-  align-self: center;
+  justify-self: center;
 }
 
 .global-dates__box h3 {
@@ -359,6 +351,7 @@ body,
   box-shadow: -4rem -4rem 0 -2rem;
   margin: 2rem 0 0 2rem;
   grid-column: 1/2;
+  justify-self: end;
 }
 
 .band-members__card-texts {
@@ -536,13 +529,17 @@ body,
   margin: auto;
 }
 
-/* Hidden elements */
+/* Hidden elements from Desktop Version*/
 #header,
-#header__top-black-bar-container {
+#header__top-black-bar-container,
+#global-dates__whole-program,
+#index-partner,
+#index-footer,
+#about__title .line-orange {
   display: none;
 }
 
-/* Desktop version */
+/* DESKTOP VERSION */
 @media only screen and (min-width: 768px) {
   /* Global styles */
   section {
@@ -570,7 +567,7 @@ body,
     font-size: 1.5rem;
   }
 
-  /* Hidden elements */
+  /* Hidden elements from Mobile Version*/
   #menu--mobile-version,
   #global-dates__btn-buy,
   #band-members__btn-more,
@@ -678,6 +675,7 @@ body,
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 100%;
     min-height: 24rem;
     padding: 3rem;
     border: 0.3rem solid #fff0;
@@ -685,6 +683,7 @@ body,
 
   .global-dates__box i {
     font-size: 3.5rem;
+    justify-self: center;
   }
 
   .global-dates__box:hover {
@@ -699,7 +698,6 @@ body,
   }
 
   /* Band Members */
-
   #band-members__cards {
     width: 100%;
   }
