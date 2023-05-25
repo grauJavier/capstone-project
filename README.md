@@ -66,7 +66,7 @@ The Joshua Redman World Tour 2023 project showcases the upcoming world tour of r
 
 <!-- Live Demo -->
 # 🚀 Live Demo <a name="live-demo"></a>
-Deployment coming soon!
+To preview a live demo [Click here!](https://graujavier.github.io/capstone-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +104,7 @@ No run test is available.
 
 ### Deployment
 
-Deployment link: *Coming soon!*
+Deployment link: https://graujavier.github.io/capstone-project/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
